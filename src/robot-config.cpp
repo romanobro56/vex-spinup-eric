@@ -15,6 +15,10 @@ motor rightMotorA = motor(PORT19, ratio18_1, true);
 motor rightMotorB = motor(PORT20, ratio18_1, true);
 motor_group RightDriveSmart = motor_group(rightMotorA, rightMotorB);
 drivetrain Drivetrain = drivetrain(LeftDriveSmart, RightDriveSmart, 319.19, 295, 40, mm, 1);
+motor IntakesMotorA = motor(PORT1, ratio18_1, false);
+motor IntakesMotorB = motor(PORT10, ratio18_1, false);
+motor_group Intakes = motor_group(IntakesMotorA, IntakesMotorB);
+motor Roller = motor(PORT18, ratio36_1, false);
 
 // VEXcode generated functions
 
