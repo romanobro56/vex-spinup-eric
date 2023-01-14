@@ -10,14 +10,20 @@
 // ---- START VEXCODE CONFIGURED DEVICES ----
 // Robot Configuration:
 // [Name]               [Type]        [Port(s)]
-// Drivetrain           drivetrain    11, 12, 19, 20  
-// Roller               motor         18              
-// Intake               motor         9               
+// Controller1          controller                    
 // ---- END VEXCODE CONFIGURED DEVICES ----
 
 #include "vex.h"
 
 using namespace vex;
+ competition Competition;
+
+
+int autonomous() {
+  Roller.spinFor(forward, 120, degrees);
+  vexSystemExitRequest();
+  return 0;
+}
 
 int main() {
   // Initializing Robot Configuration. DO NOT REMOVE!
